@@ -18,6 +18,7 @@
   "homepage": "https://github.com/VittoriaLife/mad-hatters#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^4.1.0",
+    "gulp-webp": "^4.0.1"
   }
 }

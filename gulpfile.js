@@ -5,7 +5,9 @@ const browserSync = require('browser-sync').create(); // liveserver
 const uglify =  require('gulp-uglify-es').default; // минификация js
 const autoprefixer = require('gulp-autoprefixer'); // автоматические префиксы
 const imagemin = require('gulp-imagemin'); // сжатие картинок
+const webp = require('gulp-webp');
 const del = require('gulp-delete'); // очищение папки
+const gulpWebp = require('gulp-webp');
 
 // функ-я запуска liveserver
 function browsersync() {
@@ -34,6 +36,14 @@ function images() {
       ]
     ))
     .pipe(dest('dist/img')) // куда кидаем
+}
+
+
+// функ-я для превращения  картинок других форматов в wepb
+function webpImage () {
+  return src('app/img/**/*.{png, jpg, jpeg}')
+    .pipe(webp({quality: 85}))
+    .pipe(dest('dist/img'))
 }
 
 // фун-я для js файлов
@@ -84,6 +94,7 @@ function build() {
 // экпорт функции 
 exports.styles = styles;
 exports.images = images;
+exports.webpImage = webpImage;
 exports.watching = watching;
 exports.browsersync = browsersync;
 exports.scripts = scripts;
