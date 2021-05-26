@@ -6,8 +6,7 @@ const uglify =  require('gulp-uglify-es').default; // минификация js
 const autoprefixer = require('gulp-autoprefixer'); // автоматические префиксы
 const imagemin = require('gulp-imagemin'); // сжатие картинок
 const webp = require('gulp-webp');
-const del = require('gulp-delete'); // очищение папки
-const gulpWebp = require('gulp-webp');
+const del = require('del'); // очищение папки
 
 // функ-я запуска liveserver
 function browsersync() {
