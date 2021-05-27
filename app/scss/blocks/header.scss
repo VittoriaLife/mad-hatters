@@ -5,13 +5,55 @@
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
 }
+
 
 .page-header__logo {
   width: 70%;
   margin: 0 auto;
 }
 
-.main-navigation__button .main-navigation__visually-hidden {
+.main-navigation__visually-hidden {
   @include visually-hidden;
+}
+
+.main-navigation__button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #CFADAC;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 50px;
+
+}
+
+.main-navigation__button:hover {
+  background-color: grey;
+}
+
+.main-navigation {
+  display: flex;
+  position: relative;
+  margin-top: 10px;
+}
+
+
+.main-navigation__wrapper {
+  position: absolute;
+
+}
+
+.main-navigation__list {
+  
+}
+
+
+.site-list {
+  margin: 0;
+  padding: 0;
 }
