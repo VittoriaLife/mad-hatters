@@ -1,0 +1,38 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list__item {
+  margin-bottom: 10px;
+  padding: 10px 10px;
+}
+
+.site-list__link {
+  position: relative;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #23242C;
+}
+
+.site-list__link {
+  @media(min-width: $tablet-width) {
+    &::before {
+      content: "";
+      width: 0;
+      height: 1px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: #CFADAC;
+      transition: width 0.3s ease-out;
+    }
+  }
+}  
+
+.site-list__link:hover::before {
+  width: 100%;
+}
+

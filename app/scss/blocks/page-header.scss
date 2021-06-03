@@ -1,0 +1,21 @@
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.page-header__logo {
+  width: 70%;
+  margin: 0 auto;
+}
+
+
