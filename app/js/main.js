@@ -1,3 +1,3 @@
 'use strict';
 
-const menuButton = document.querySelector('.main-navigation__button');
+// const menuButton = document.querySelector('.main-navigation__button');

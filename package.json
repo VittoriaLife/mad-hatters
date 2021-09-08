@@ -3,29 +3,40 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp test",
+    "build": "gulp build"
+  },
+  "author": "Victoria.K",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.4",
+    "autoprefixer": "^10.3.4",
+    "browser-sync": "^2.27.5",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-terser": "^2.0.1",
+    "gulp-webp": "^4.0.1",
+    "postcss": "^8.3.6",
+    "postcss-csso": "^5.0.1",
+    "postcss-import": "^14.0.2",
+    "postcss-media-minmax": "^5.0.0",
+    "sass": "^1.39.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VittoriaLife/mad-hatters.git"
   },
-  "author": "Victoria K.",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/VittoriaLife/mad-hatters/issues"
   },
   "homepage": "https://github.com/VittoriaLife/mad-hatters#readme",
-  "devDependencies": {
-    "browser-sync": "^2.26.14",
-    "del": "^6.0.0",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-uglify-es": "^2.0.0",
-    "gulp-webp": "^4.0.1"
-  },
-  "dependencies": {},
   "description": ""
 }
