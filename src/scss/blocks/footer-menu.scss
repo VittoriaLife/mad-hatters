@@ -1,0 +1,20 @@
+.footer-menu-wrap {
+  margin-bottom: 40px;
+}
+
+.footer-menu__title {
+  position: relative;
+  font-size: 20px;
+  color: #faf7f3;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: 5px;
+    background-image: url("../../img/bottom-decoration.svg");
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+  }
+}

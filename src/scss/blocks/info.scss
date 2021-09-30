@@ -1,0 +1,26 @@
+.info {
+  text-align: center;
+}
+
+.info__text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.info-logo-wrap {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 8px;
+    background-image: url("../../img/bottom-decoration.svg");
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+}
+
+}

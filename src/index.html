@@ -124,20 +124,21 @@
     <section class="newsletter">
       <p class="newsletter__text">Keep up-to-date on us</p>
       <h2 class="newsletter__title">Newsletter</h2>
-      <form>
-        <input type="email" placeholder="Enter your email">
-        <button type="submit">Submit</button>
+      <form class="newsletter__form">
+        <input class="newsletter__input" type="email" placeholder="Enter your email">
+        <button class="newsletter__btn" type="submit">Submit</button>
       </form>
     </section>
   </main>
   <footer class="page-footer">
    <section class="info"> 
+     <div class="info-logo-wrap">
       <img class="info__logo" src="img/logo-footer.svg" width="245" height="23">
+     </div>
       <p class="info__text">Be better, be cooler, be a Mad Hatter and sustainably matter.</p>
-      <p class="info__copyright">Copyright 2012 Mad Hatters, Inc. Terms & Privacy</p>
    </section>
    <section class="footer-menu">
-     <div>
+     <div class="footer-menu-wrap">
       <p class="footer-menu__title">Shop here<p>
         <ul class="footer-menu__item shop-list">
           <li class="shop-list__item"><a src="#">For Men</a></li>
@@ -147,8 +148,8 @@
           <li class="shop-list__item"><a src="#">For No-one</a></li>
         </ul>
      </div>
-     <div>
-      <p>The legals</p>
+     <div class="footer-menu-wrap">
+      <p class="footer-menu__title">The legals</p>
       <ul class="footer-menu__item legals-list">
        <li class="legals-list__item"><a src="#">Copyright</a></li>
        <li class="legals-list__item"><a src="#">Privacy</a></li>
@@ -157,6 +158,7 @@
      </ul>
     </div>
    </section>
+   <p class="page-footer__copyright">Copyright 2012 Mad Hatters, Inc. Terms & Privacy</p>
   </footer> 
   <script src="js/main.js"></script>
 </body>

@@ -1,11 +1,11 @@
 .newsletter {
   padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #F9F2EF;
 }
 
 .newsletter__text {
   margin: 0;
-  font-family: "Poppins";
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
@@ -15,5 +15,47 @@
 
 
 .newsletter__title {
-  
+  margin: 0;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-align: center;
+  font-family: "PlayfairDisplay";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #23242C;
+}
+
+.newsletter__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter__input {
+  margin-bottom: 25px;
+  padding: 10px 10px;
+  border: none;
+  border-bottom: 1px solid rgba(150, 118, 117, 0.5);
+  background-color: transparent;
+
+  &::placeholder {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 42px;
+    text-align: center;
+    color: #DCCBC6;
+  }
+}
+
+
+.newsletter__btn {
+  padding: 10px 30px;
+  background: #FFFFFF;
+  border: 1px solid #CFADAC;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #967675;
 }

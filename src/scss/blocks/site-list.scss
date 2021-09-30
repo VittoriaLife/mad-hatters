@@ -7,6 +7,7 @@
 .site-list__item {
   margin-bottom: 10px;
   padding: 10px 10px;
+ 
 }
 
 .site-list__link {
@@ -29,10 +30,14 @@
       background-color: #CFADAC;
       transition: width 0.3s ease-out;
     }
+
+    &:hover::before {
+      width: 100%;
+    }
   }
+
+  
 }  
 
-.site-list__link:hover::before {
-  width: 100%;
-}
+
 

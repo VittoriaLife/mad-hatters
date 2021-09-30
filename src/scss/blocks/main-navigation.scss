@@ -14,11 +14,16 @@
   cursor: pointer;
   min-width: 50px;
 
+  &:active {
+    background-color: #967675;
+  }
+
+  @media(min-width: $tablet-width){
+    display: none;
+  }
+
 }
 
-.main-navigation__button:hover {
-  background-color: grey;
-}
 
 .main-navigation {
   display: flex;
@@ -29,12 +34,15 @@
 }
 
 .main-navigation--opened .main-navigation__button {
-  width: 10%;
+  @media (max-width: $mobile-width-only) {
+    width: 10%;
+  }
 }
 
 .main-navigation--opened .main-navigation__list {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  align-items: center;
 }
 
 .main-navigation--opened  .main-navigation__wrapper {
