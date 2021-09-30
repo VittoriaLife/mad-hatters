@@ -1,0 +1,53 @@
+.more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+
+.more::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 67px;
+  height: 1px;
+  background-color: #967675;
+}
+
+.more::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 67px;
+  height: 1px;
+  background-color: #967675;
+}
+
+
+.more__title {
+  margin: 0;
+  font-family: "PlayfairDisplay";
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 60px;
+  text-align: center;
+  color: #23242C;
+  opacity: 0.04;
+}
+
+.more__link {
+  position: absolute;
+  top: 22px;
+  font-family: "PlayfairDisplay";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;   
+  color: #23242C;
+  text-decoration: none;
+}

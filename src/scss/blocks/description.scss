@@ -1,0 +1,35 @@
+.description__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-list__title {
+  position: relative;
+  font-size: 25px;
+  font-family: "PlayfairDisplay";
+  font-weight: 400;
+  font-style: italic;
+}
+
+.features-list__title::before {
+  content: "";
+  position: absolute;
+  left: 95px;
+  top: 14px;
+  background-image: url("../../img/top-decoration.svg");
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+    
+}
+
+.features-list__text {
+  color: #9D8888;
+}

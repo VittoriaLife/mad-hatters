@@ -1,0 +1,21 @@
+.quote {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 200px;
+  background-image: url("../../img/quote-circle-min.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.quote__text {
+  margin: 0;
+  font-family: "PlayfairDisplay"; 
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  color: #23242C;
+}
+

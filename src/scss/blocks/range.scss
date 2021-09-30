@@ -1,0 +1,67 @@
+.range {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.range__text {
+  color: #967675;
+  font-weight: 300;
+}
+
+.range__title {
+  font-family: "PlayfairDisplay";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.range__list {
+  padding: 0;
+  list-style: none;
+}
+
+.range__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  background-color: #F6ECE8;
+}
+
+
+.range__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+
+.range__img {
+  width: 299px;
+  height: 261px;
+}
+
+.range__sub-title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: "PlayfairDisplay";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: #967675;
+}
+
+.range__description {
+  margin-top: 0;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #967675;
+}

@@ -20,7 +20,7 @@ const webp = require('gulp-webp');
 //HTML
 
 const html = () => {
-  return src('app/*.html')
+  return src('src/*.html')
     .pipe(htmlmin({
       removeComments: true,
       collapseWhitespace: true
@@ -35,16 +35,16 @@ exports.html = html;
 // Styles 
 
 const styles = () => {
-  return src('app/scss/style.scss')
+  return src('src/scss/style.scss')
     .pipe(plumber())
-    .pipe(css({outputStyle: 'compressed'}))
+    .pipe(css({outputStyle: 'compressed'}).on('error', css.logError))
     .pipe(postcss([
       cssImport(),
       mediaminmax(),
       autoprefixer()
     ]))
     .pipe(rename('style.min.css'))
-    .pipe(dest('app/css'))
+    .pipe(dest('src/css'))
     .pipe(browserSync.stream());
 };
 
@@ -55,13 +55,13 @@ exports.styles = styles;
 // Scripts 
 
 const scripts = () => {
-  return src('app/js/main.js')
+  return src('src/js/main.js')
     .pipe(babel({
       presets:['@babel/preset-env']
     }))
     .pipe(terser())
     .pipe(rename('main.min.js'))
-    .pipe(dest('app/js'))
+    .pipe(dest('src/js'))
     .pipe(browserSync.stream());
 };
 
@@ -72,7 +72,7 @@ exports.scripts = scripts;
 // Images 
 
 const images = () => {
-  return src('app/img/**/*.{png, jpg, jpeg, svg}')
+  return src('src/img/**/*.{png, jpg, jpeg, svg}')
   .pipe(imagemin([
     imagemin.gifsicle({interlaced: true}),
     imagemin.mozjpeg({quality: 85, progressive: true}),
@@ -84,7 +84,7 @@ const images = () => {
       ]
     })
   ]))
-  .pipe(dist('app/img'));
+  .pipe(dist('src/img'));
 };
 
 exports.images = images;
@@ -94,9 +94,9 @@ exports.images = images;
 // WebP 
 
 const createWepb = () => {
-  return src('app/img/**/*.{jpg, png, jpeg}')
+  return src('src/img/**/*.{jpg, png, jpeg}')
     .pipe(webp({quality: 90}))
-    .pipe(dest('app/img'));
+    .pipe(dest('src/img'));
 };
 
 exports.createWepb = createWepb;
@@ -107,12 +107,12 @@ exports.createWepb = createWepb;
 
 const copy = () => {
   return src([
-    'app/css/style.min.css',
-    'app/fonts/*',
-    'app/img/*',
-    'app/js/main.min.js'
+    'src/css/style.min.css',
+    'src/fonts/*',
+     'src/img/*',
+    'src/js/main.min.js'
   ],{
-    base: 'app/'
+    base: 'src/'
   })
   .pipe(dest('dist'));
 };
@@ -128,7 +128,7 @@ const browsersync = () => {
     ui: false,
     notify: false,
     server: {
-      baseDir: 'app/'
+      baseDir: 'src/'
     }
   });
 };
@@ -140,9 +140,9 @@ exports.browsersync = browsersync;
 // Watch 
 
 const watching = () => {
-  watch(['app/scss/**/*.scss'], styles);
-  watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-  watch(['app/*.html']).on('change', browserSync.reload);
+  watch(['src/scss/**/*.scss'], styles);
+  watch(['src/js/**/*.js', '!src/js/main.min.js'], scripts);
+  watch(['src/*.html']).on('change', browserSync.reload);
 };
 
 exports.watching = watching;

@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
 .introduction__text {
@@ -11,8 +13,8 @@
 
 .introduction__title {
   margin-top: 10px;
-  margin-bottom: 10px;
-  font-family: $font-playfairBold;
+  margin-bottom: 20px;
+  font-family: "PlayfairDisplay";
   color: #23242C;
   font-size: 35px;
 }
@@ -22,5 +24,16 @@
 }
 
 .introduction__btn-wrap {
+  width: 130px;
+  padding: 15px 5px;
+  background: #FFFFFF;
   border: 1px solid #CFADAC;
+  border-radius: 6px; 
+  box-shadow: 0px 6px 20px rgba(150, 79, 76, 0.32);
+}
+
+.introducton__btn {
+  text-decoration: none;
+  color: #967675;
+
 }

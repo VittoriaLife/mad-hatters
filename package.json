@@ -1,12 +1,13 @@
 {
-  "name": "mad-hatters",
+  "name": "test",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "gulp test",
     "build": "gulp build"
   },
-  "author": "Victoria.K",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.15.5",
@@ -29,14 +30,5 @@
     "postcss-import": "^14.0.2",
     "postcss-media-minmax": "^5.0.0",
     "sass": "^1.39.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/VittoriaLife/mad-hatters.git"
-  },
-  "bugs": {
-    "url": "https://github.com/VittoriaLife/mad-hatters/issues"
-  },
-  "homepage": "https://github.com/VittoriaLife/mad-hatters#readme",
-  "description": ""
+  }
 }

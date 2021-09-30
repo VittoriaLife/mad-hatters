@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "PlayfairDisplay-regular";
+  font-family: "PlayfairDisplay";
   src: url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
        url("../fonts/PlayfairDisplay-Regular.woff") format("woff");
   font-weight: 400;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "PlayfairDisplay-bold";
+  font-family: "PlayfairDisplay";
   src: url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"),
        url("../fonts/PlayfairDisplay-Bold.woff") format("woff");
   font-weight: 700;
@@ -15,15 +15,16 @@
 }
 
 @font-face {
-  font-family: "OPlayfairDisplay-italic";
+  font-family: "PlayfairDisplay";
   src:  url("../fonts/PlayfairDisplay-Italic.woff2") format("woff2"),
         url("../fonts/PlayfairDisplay-Italic.woff") format("woff");
   font-weight: 400;
+  font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Poppins-light";
+  font-family: "Poppins";
   src:  url("../fonts/poppins-light.woff2") format("woff2"),
         url("../fonts/poppins-light.woff") format("woff");
   font-weight: 300;
@@ -31,7 +32,7 @@
 }
 
 @font-face {
-  font-family: "Poppins-regular";
+  font-family: "Poppins";
   src:  url("../fonts/poppins-regular.woff2") format("woff2"),
         url("../fonts/poppins-regular.woff") format("woff");
   font-weight: 400;
@@ -39,7 +40,7 @@
 }
 
 @font-face {
-  font-family: "Poppins-semibold";
+  font-family: "Poppins";
   src:  url("../fonts/poppins-semibold.woff2") format("woff2"),
         url("../fonts/poppins-semibold.woff") format("woff");
   font-weight: 600;
